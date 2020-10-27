@@ -1,0 +1,131 @@
+html {
+    text-align: center;
+    direction: ltr;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgb(54, 116, 167);
+}
+
+#main {
+    box-sizing: border-box;
+    width: 50vw;
+    min-width: 360px;
+    align-content: center;
+    justify-content: space-around;
+    background-color: rgb(54, 116, 167);
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 2em;
+    display: block;
+}
+
+body {
+    background-color: rgb(100, 100, 100);
+    background-image: url("https://forums.pythonic.guru/uploads/default/original/1X/3c7e2ccc77e214fb4e38daa421f1b8878a5677f9.jpeg");
+}
+
+h1 {
+    color: rgb(255, 203, 58);
+    font-family: sans-serif;
+    font-size: 6rem;
+    text-shadow: rgb(100, 100, 100) 3px 3px 2px;
+    padding-bottom: 1vh;
+    position: relative;
+}
+
+.time {
+    color: whitesmoke;
+}
+
+#search {
+    box-sizing: border-box;
+    min-width: 360px;
+    width: 50%;
+    align-content: center;
+    justify-content: space-around;
+    background-color: rgb(54, 116, 167);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 2em;
+    border-radius: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 1em;
+}
+
+.btn_div {
+    align-content: space-between;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    margin: auto;
+}
+
+.input {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: flex-end;
+}
+
+.btn-warning {
+    color: white;
+    font-weight: bold;
+}
+
+#src_form {
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#results {
+    box-sizing: border-box;
+    width: 50vw;
+    min-width: 360px;
+    align-content: center;
+    justify-content: space-around;
+    background-color: rgb(54, 116, 167);
+    margin: auto;
+    padding: 2em;
+    border-radius: 2em;
+    display: block;
+    margin-top: 1em;
+}
+
+h3 {
+    color: rgb(255, 203, 58);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+h4 {
+    color: rgb(255, 203, 58);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+h2 {
+    margin-top: 1rem;
+    color: rgb(255, 203, 58);
+    font-size: 1.5rem;
+}
+
+h5 {
+    color: rgb(255, 203, 58);
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    #src_form {
+        display: inline;
+    }
+    .btn_div {
+        margin-top: 1.5em;
+    }
+}

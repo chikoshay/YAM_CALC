@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAM Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='holi.css')}}">
+</head>
+
+<body>
+    <header>
+        <h1>YAM Calculator</h1>
+    </header>
+    <div id="main">
+        <h3>Get the feeling the course<br>might be more then "16" weeks long?</h3>
+        <h5>This is the Only web Calculator that tells you<br>how many weeks (in REAL TIME)<br>are left in Yam's Python
+            course!</h5>
+    </div>
+    <div id="search">
+        <form id="src_form" class="col" action="/" method="GET">
+            <div class="input">
+                <label class="time">what week are you?</label>
+                <input list="states" id="weeks" name="weeks" type="text" placeholder="1, 2... 16" tabindex=0 required>
+                <datalist id="states">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                    <option value="11">
+                    <option value="12">
+                    <option value="13">
+                    <option value="14">
+                    <option value="15">
+                    <option value="16">
+                </datalist>
+            </div>
+            <div class="btn_div">
+                <button type="submit" class="btn btn-warning btn-lg">calculate NOW<br>>>></button>
+            </div>
+        </form>
+    </div>
+    <div id="results">
+        <h2>{{ status }}</h2>
+        <h4>{{ verdict }}</h4>
+        <h3>{{ holishit_result }}</h3>
+    </div>
+
+</body>
+
+</html>
