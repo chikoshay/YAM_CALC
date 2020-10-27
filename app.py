@@ -18,7 +18,7 @@ def YAM():
             fake_time = request.args.getlist("weeks")
             fake_time = int(fake_time[0])
             time_left = (16 - fake_time) * 4
-            verdict = f"your are at week {fake_time}"
+            verdict = f"You are at week: {fake_time}"
             holishit_result = f"that means you have {time_left} weeks to go!"
     return render_template("index.html",
                            status=status,
